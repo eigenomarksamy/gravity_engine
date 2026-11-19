@@ -18,6 +18,7 @@ nothing is built yet. this plan holds the bootstrap (B1), the MVP (M1–M5) phas
   | SCM | source control and delivery: CI, branching, protection, releases and versioning |
 
 - **each ticket** says what to do, what it needs, and when it is done. its "done when" is its acceptance criteria. a need is a hard need: the ticket starts once it is done. a ticket in another repository is named with that repository, as `pathfinding_playground` B1.
+- **size** is the index's column, on the ecosystem's scale, the same value as the ticket's issue's `Size` in the ecosystem's GitHub Project: xxs takes minutes, xs under an hour, s an hour or two, m about a session, l two or three, xl four to six and xxl more. tbd means an open decision or work not yet planned decides it. a change to one is made to the other in the same session.
 - **issues.** every open ticket gets one GitHub issue in this repository. the issue's title starts with the ticket's id, and its body links the ticket's anchor here without copying it. the ticket holds the scope and history, and the issue holds status, priority and blockers.
 - **shared decisions** bind this lab and other repositories. this plan states each outcome it relies on in one line and cites the decision by its id. a change to one is made in the decision first.
 - **adding work.** new work goes here as a ticket in a lane. this repository is public, so confidential work never goes in this file. the ecosystem's shared rules, which `CLAUDE.md` imports, say where it goes.
@@ -58,22 +59,22 @@ the three C++ labs share their constraints, stack, architecture and definition o
 
 ## index
 
-| ticket | title | needs | status |
-| --- | --- | --- | --- |
-| [B1](#b1) | bootstrap: native, WebAssembly and web, built and deployed from GitHub Actions | none | todo |
-| [M1](#m1) | vector and body model, units, pairwise gravitational force, unit tests | B1 | todo |
-| [M2](#m2) | fixed-step leapfrog integration, diagnostics and snapshots | M1 | todo |
-| [M3](#m3) | presets, body editing, trajectories, zoom and controls | M2 | todo |
-| [M4](#m4) | numeric safeguards, timestep and body-count limits, benchmark | M3 | todo |
-| [M5](#m5) | release: deployment, explanation of numerical tradeoffs, and README | M4 | todo |
-| [L1](#l1) | selectable integrators, with stability comparisons | M5 | todo |
-| [L2](#l2) | collision detection and optional body merging | M5 | todo |
-| [L3](#l3) | Barnes-Hut, an approximate accelerated solver for larger systems | M5 | todo |
-| [L4](#l4) | orbital elements, barycenters and further diagnostics | M5 | todo |
-| [L5](#l5) | high-density rendering, saved scenes and shareable configuration links | M5 | todo |
-| [L6](#l6) | optional 3D mode | L1–L5 | todo |
-| [DOC1](#doc1) | the lab's documents | `meta-eigenomar` ST1 | todo |
-| [SCM1](#scm1) | the ecosystem's SCM strategy | `meta-eigenomar` ST2 | todo |
+| ticket | title | size | needs | status |
+| --- | --- | --- | --- | --- |
+| [B1](#b1) | bootstrap: native, WebAssembly and web, built and deployed from GitHub Actions | l | none | todo |
+| [M1](#m1) | vector and body model, units, pairwise gravitational force, unit tests | s | B1 | todo |
+| [M2](#m2) | fixed-step leapfrog integration, diagnostics and snapshots | m | M1 | todo |
+| [M3](#m3) | presets, body editing, trajectories, zoom and controls | l | M2 | todo |
+| [M4](#m4) | numeric safeguards, timestep and body-count limits, benchmark | m | M3 | todo |
+| [M5](#m5) | release: deployment, explanation of numerical tradeoffs, and README | m | M4 | todo |
+| [L1](#l1) | selectable integrators, with stability comparisons | m | M5 | todo |
+| [L2](#l2) | collision detection and optional body merging | m | M5 | todo |
+| [L3](#l3) | Barnes-Hut, an approximate accelerated solver for larger systems | l | M5 | todo |
+| [L4](#l4) | orbital elements, barycenters and further diagnostics | m | M5 | todo |
+| [L5](#l5) | high-density rendering, saved scenes and shareable configuration links | l | M5 | todo |
+| [L6](#l6) | optional 3D mode | tbd | L1–L5 | todo |
+| [DOC1](#doc1) | the lab's documents | tbd | `meta-eigenomar` ST1 | todo |
+| [SCM1](#scm1) | the ecosystem's SCM strategy | tbd | `meta-eigenomar` ST2 | todo |
 
 ## bootstrap
 
